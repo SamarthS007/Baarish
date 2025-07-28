@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sam Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false">
+        <button><img src="search.jpg" style="width: 55px; height: 55px; border-radius: 50%;"></button>
+      </div>
+      <div class="weather">
+        <img src="rain.png" class="weather-icon" style="width: 165px; height: 145px;">
+        <h1 class="temp">25°C</h1>
+        <h2 class="city">Delhi</h2>
+        <div class="details">
+          <div class="col">
+            <img src="humid.png" style="width: 80px; height: 80px;">
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="wind.png" style="width: 80px; height: 80px;">
+            <div>
+              <p class="wind">15 km/hr</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const apiKey= "9256d62b59b73e377415223ceeda05d3";
+      const apiUrl= "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+      const searchBox=document.querySelector(".search input");
+      const searchBtn=document.querySelector(".search button");
+      const weatherIcon=document.querySelector(".weather-icon");
+      async function CheckWeather(city){
+        try {
+          const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+          if (!response.ok) throw new Error("City not found");
+          var data = await response.json();
+          console.log(data);
+          document.querySelector(".city").innerHTML = data.name;
+          document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+          document.querySelector(".humidity").innerHTML = data.main.humidity + " %";
+          document.querySelector(".wind").innerHTML = data.wind.speed + " km/hr";
+          if(data.weather[0].main=="Clouds"){
+            weatherIcon.src="clouds.png";
+          } else if(data.weather[0].main=="Clear"){
+            weatherIcon.src="clear.jpg";
+          } else if(data.weather[0].main=="Rain"){
+            weatherIcon.src="rain.png";
+          } else if(data.weather[0].main=="Drizzle"){
+            weatherIcon.src="drizzle.png";
+          } else if(data.weather[0].main=="Mist"){
+            weatherIcon.src="mist.png";
+          } else if(data.weather[0].main=="Snow"){
+            weatherIcon.src="snow.png";
+          } else {
+            weatherIcon.src="default.png";
+          }
+        } catch (error) {
+          console.log(error);
+          alert("Error fetching weather data. Check the city name or internet connection.");
+        }
+        document.querySelector(".weather").style.display = "block";
+      }
+      searchBtn.addEventListener("click",()=>{
+        if (searchBox.value.trim()) {
+        CheckWeather(searchBox.value);
+        } else {
+        alert("Please enter a city name!");
+        }
+      })
+    </script>
+  </body>
+</html>
+
+

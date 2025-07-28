@@ -1,0 +1,106 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+
+body{
+    background-color: #222;
+}
+
+.card{
+    width: 470px;
+    margin: 100px auto;
+    background: linear-gradient(135deg, rgba(248, 233, 15, 0.931), #61c9d4);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    width: 80%;
+    height: 60px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 25px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.details{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 px 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.col img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 24px;
+    margin-top: -4px;
+}
+
+.weather{
+    display: none;
+}
