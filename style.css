@@ -1,18 +1,30 @@
-.card{
-    width: 470px;
-    margin: 100px auto;
-    background: #ADD8E6;
-    color: #000000;
-    border-radius: 20px;
-    padding: 40px 35px;
+.card {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     text-align: center;
+    transition: transform 0.3s;
 }
 
-.weather{
-    background-color: #0000FF;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.weather {
+    background-color: #2196F3;
     display: none;
 }
 
-body{
-    background: #696969;
+body {
+    background: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
