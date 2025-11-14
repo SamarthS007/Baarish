@@ -10,13 +10,13 @@ width: 100%;
 }
 
 body{
-    background-color: light blue;
+    background-color: #00008B;
 }
 
 .card{
     width: 470px;
     margin: 100px auto;
-    background: light blue;
+    background: #00008B;
     color: #fff;
     border-radius: 20px;
     padding: 40px 35px;
@@ -37,7 +37,7 @@ body{
     border-radius: 30px;
     border: 0;
     outline: 0;
-    background: light blue;
+    background: #00008B;
     color: #555;
     flex: 1;
     margin-right: 16px;
@@ -50,7 +50,7 @@ body{
     border-radius: 50px;
     border: 0;
     outline: 0;
-    background: light blue;
+    background: #00008B;
     cursor: pointer;
 }
 
