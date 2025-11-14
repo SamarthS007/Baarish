@@ -10,14 +10,14 @@ width: 100%;
 }
 
 body{
-    background-color: #00008B;
+    background-color: #000000;
 }
 
 .card{
     width: 470px;
     margin: 100px auto;
-    background: #00008B;
-    color: #fff;
+    background: #000000;
+    color: #000000;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
@@ -37,8 +37,8 @@ body{
     border-radius: 30px;
     border: 0;
     outline: 0;
-    background: #00008B;
-    color: #555;
+    background: #000000;
+    color: #000000;
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
@@ -50,7 +50,7 @@ body{
     border-radius: 50px;
     border: 0;
     outline: 0;
-    background: #00008B;
+    background: #000000;
     cursor: pointer;
 }
 
