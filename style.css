@@ -1,27 +1,27 @@
 .card {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
-    background: linear-gradient(to right, #4CAF50, #2196F3);
-    color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    background: #ADD8E6;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    padding: 40px;
     text-align: center;
     transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .weather {
-    background-color: #2196F3;
+    background-color: #ADD8E6;
     display: none;
 }
 
 body {
-    background: #f2f2f2;
+    background: #ADD8E6;
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
