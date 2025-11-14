@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Shoes Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Beautiful Shoes Collection</h1>
+  </header>
+  <main>
+    <section class="shoe">
+      <img src="shoe1.jpg" alt="Beautiful Shoe">
+      <h2>Stylish High Heels</h2>
+      <p>Price: $99.99</p>
+    </section>
+    <section class="shoe">
+      <img src="shoe2.jpg" alt="Elegant Shoe">
+      <h2>Classic Flats</h2>
+      <p>Price: $79.99</p>
+    </section>
+    <section class="shoe">
+      <img src="shoe3.jpg" alt="Fashionable Shoe">
+      <h2>Trendy Sneakers</h2>
+      <p>Price: $129.99</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2022 Beautiful Shoes Collection</p>
+  </footer>
+</body>
+</html>
