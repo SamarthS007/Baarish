@@ -2,11 +2,11 @@
     width: 100%;
     max-width: 800px;
     margin: 50px auto;
-    background: #ADD8E6;
-    color: #333;
-    border-radius: 20px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    padding: 40px;
+    background: linear-gradient(45deg, #FF6B6B, #6B6BFF);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
     text-align: center;
     transition: transform 0.3s;
 }
@@ -16,13 +16,13 @@
 }
 
 .weather {
-    background-color: #ADD8E6;
+    background-color: #FF6B6B;
     display: none;
 }
 
 body {
-    background: #ADD8E6;
-    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
